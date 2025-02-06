@@ -17,7 +17,6 @@ public class DemoArray {
         for (int i = 0; i < arrayTest.length; i++) {
             System.out.println(""+ arrayTest[i]);
         }
-
     }
     
 }
