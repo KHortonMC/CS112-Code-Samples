@@ -1,11 +1,21 @@
 public class Dog extends Animal {
     String bark;
 
-    public Dog() {}
+    public Dog() {
+        super("White", 50.0, 30.0);
+        this.bark = "Woof";
+    }
 
     public Dog(String bark, String furColor, double weight, double height) {
         super(furColor, weight, height);
         this.bark = bark;
+        super.furColor = furColor;
+        this.setHeight(height);
+    }
+
+    @Override
+    public String vocalize() {
+        return this.bark;
     }
 
     @Override

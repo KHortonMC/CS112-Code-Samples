@@ -1,10 +1,13 @@
 public class Animal {
     protected String furColor;
-    protected double height;
-    protected double internalWeight;
+    private double height;
+    private double internalWeight;
+
+    public double getHeight() { return height; }
+    public void setHeight(double height) { this.height = height; }
 
     public Animal() {
-        this.furColor = "Invalid";
+        this.furColor = null;
         this.internalWeight = 0.0;
         this.height = 0.0;
     }
@@ -13,6 +16,10 @@ public class Animal {
         this.furColor = furColor;
         this.height = height;
         this.internalWeight = weight;
+    }
+
+    public String vocalize() {
+        return "*indeterminate*";
     }
 
     public String toString() {
